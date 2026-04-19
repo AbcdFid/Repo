@@ -1,7 +1,6 @@
 # write a code for saving text instructions for the app
 from PyQt5.QtCore import Qt
 from PyQt5 import QApplication, QWidget, QHBoxLayout, QVBoxLayout, QLabel
-app = QApplication([])
 txt_hello = 'Selamat datang di program deteksi status kesehatan!'
 txt_title = 'health'
 txt_next = 'start'
