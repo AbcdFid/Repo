@@ -1,10 +1,10 @@
 # write a code for the third screen of app
-from PyQt5.0tCore import Ot
-from Py0t5.0tWidgets Import (
+from PyQt5.QtCore import Ot
+from Py0t5.QtWidgets import (
     QApplication, QWidget,
     OHBoxlayout, QVBoxLayout, QGridLayout,
     QGroupBox, QRadioButton, QPushButton, QLabel, QListWidget, QLineEdit)
-from instr import
+from instr import*
 
 class FinalWin(QWidget):
     def init (self):
@@ -16,8 +16,8 @@ class FinalWin(QWidget):
         self.workh_text = QLabel(txt_workheart)
         self.index_text= QLabel(txt_index)
         self.layout_line = QVBoxLayout()
-        self.layout_line.addWidget(self.index_text, alignment Qt.AlignCenter)
-        self.layout_line.addWidget(self.workh_text, alignment Qt.AlignCenter)
+        self.layout_line.addWidget(self.index_text, alignment = Qt.AlignCenter)
+        self.layout_line.addWidget(self.workh_text, alignment = Qt.AlignCenter)
         self.setLayout(self.layout_line)
     def set_appear(self):
         self.setWindowTitle(txt_finalwin)
@@ -25,13 +25,13 @@ class FinalWin(QWidget):
         self.move(win_x, win_y)
 def results(self):
     if self.exp.age < 7:
-        self.index B
+        self.index = 0
         return "there is no data for this age"
-    self.index (4 (int(self.exp.t1)+ int(self.exp.t2) int(self.exp.t3))-200)/10
+    self.index (4 * (int(self.exp.t1) + int(self.exp.t2) + int(self.exp.t3))-200)/10
     if self.exp.age == 7 or self.exp.age == 8:
         if self.index >= 21:
             return txt_res1
-        elif self.index 21 and self.index >= 17:
+        elif self.index < 21 and self.index >= 17:
             return txt_res2
         elif self.index < 17 and self.index >= 12:
             return txt_res3
@@ -42,7 +42,7 @@ def results(self):
     if self.exp.age == 9 or self.exp.age == 10:
         if self. Index >= 19.5:
             return txt_res1
-        elif self.index 19.5 and self.index >= 15.5:
+        elif self.index < 19.5 and self.index >= 15.5:
             return txt_res2
         elif self.index < 15.5 and self.index >= 10.5:
             return txt_res3
@@ -75,12 +75,12 @@ def results(self):
         if self.exp.age >= 15:
             if self.index >= 15:
                 return txt_res1
-                elif self.index < 15 and self.index >= 11:
-                    return txt_res2
-                elif self.index < 11 and self.index >= 6:
-                    return txt_res3
-                elif self.index < 6 and self.index 0.5:
-                    return txt_res4
-                else:
-                    return txt_res5
+            elif self.index < 15 and self.index >= 11:
+                return txt_res2
+            elif self.index < 11 and self.index >= 6:
+                return txt_res3
+            elif self.index < 6 and self.index >= 0.5:
+                return txt_res4
+            else:
+                return txt_res5
                     
