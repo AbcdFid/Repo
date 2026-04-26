@@ -1,12 +1,21 @@
 # write a code for the second screen of app
-from PyQt5.QtCore import Qt
+from PyQt5.QtCore import Qt, QTimer, QTime, QLocale
+from PyQt5.QtGui import QDoubleValidator, QIntValidator, QFont # checking the types of input values
 from PyQt5.QtWidgets import (
-    QApplication, QWidget,
-    QHBoxLayout, QVBoxLayout,
-    QGroupBox, QRadioButton,
-    QPushButton, QLabel, QListWidget, QLineEdit)
-from instr import*
-from final_win import*
+       QApplication, QWidget,
+       QHBoxLayout, QVBoxLayout, QGridLayout,
+       QGroupBox, QRadioButton,
+       QPushButton, QLabel, QListWidget, QLineEdit)
+from instr import *
+from final_win import *
+
+class Experiment():
+   def __init__(self, age, test1, test2, test3):
+       self.age = age
+       self.t1 = test1
+       self.t2 = test2
+       self.t3 = test3
+
 
 class TestWin(QWidget):
     def __init__(self):
@@ -124,7 +133,7 @@ class TestWin(QWidget):
     
     def connects(self):
         self.btn_next.clicked.connect(self.next_click)
-        self.btn_testl.clicked.connect(self.timer_test)
+        self.btn_test1.clicked.connect(self.timer_test)
         self.btn_test2.clicked.connect(self.timer_sits)
         self.btn_test3.clicked.connect(self.timer_final)
 

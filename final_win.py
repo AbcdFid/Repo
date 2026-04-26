@@ -1,10 +1,10 @@
 # write a code for the third screen of app
-from PyQt5.QtCore import Ot
-from Py0t5.QtWidgets import (
+from PyQt5.QtCore import Qt
+from PyQt5.QtWidgets import (
     QApplication, QWidget,
-    OHBoxlayout, QVBoxLayout, QGridLayout,
+    QHBoxLayout, QVBoxLayout, QGridLayout,
     QGroupBox, QRadioButton, QPushButton, QLabel, QListWidget, QLineEdit)
-from instr import*
+from instr import *
 
 class FinalWin(QWidget):
     def init (self):
