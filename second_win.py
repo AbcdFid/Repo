@@ -124,7 +124,7 @@ class TestWin(QWidget):
     
     def connects(self):
         self.btn_next.clicked.connect(self.next_click)
-        self.btn testl.clicked.connect(self.timer_test)
+        self.btn_testl.clicked.connect(self.timer_test)
         self.btn_test2.clicked.connect(self.timer_sits)
         self.btn_test3.clicked.connect(self.timer_final)
 
