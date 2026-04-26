@@ -1,6 +1,7 @@
 # write a code for saving text instructions for the app
 from PyQt5.QtCore import QTime
-win_x, win_y = 100, 100
+win_x, wi 
+n_y = 100, 100
 win_width, win_height = 1000, 600
 txt_hello = 'Selamat datang di program deteksi status kesehatan!'
 txt_title = 'health'
