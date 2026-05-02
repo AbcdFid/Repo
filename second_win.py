@@ -22,26 +22,14 @@ class Experiment():
 
 class TestWin(QWidget):
    def __init__(self):
-       ''' the window in which the survey is being conducted '''
        super().__init__()
-
-
-       # creating and configuring graphic elements:
        self.initUI()
-
-
-       #establishes connections between elements
        self.connects()
-
-
-       # sets what the window will look like (label, size, location)
        self.set_appear()
-      
-       # start:
        self.show()
 
 
-   ''' sets what the window will look like (label, size, location) '''
+ 
    def set_appear(self):
        self.setWindowTitle(txt_title)
        self.resize(win_width, win_height)
@@ -49,7 +37,7 @@ class TestWin(QWidget):
 
 
    def initUI(self):
-       ''' creates graphic elements '''
+       
        self.btn_next = QPushButton(txt_sendresults, self)
        self.btn_test1 = QPushButton(txt_starttest1, self)
        self.btn_test2 = QPushButton(txt_starttest2, self)
